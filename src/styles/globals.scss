@@ -1,0 +1,47 @@
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+p,
+li,
+a {
+  /*font-size: 14px;*/
+  /*line-height: 1.5;*/
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.size-anim {
+  transition: all 0.3s ease-in;
+}
+
+.no-dot {
+  .mantine-Badge-root::before {
+    display: none !important;
+  }
+}
+
+.no-dot::before {
+  display: none !important;
+}
+
+.mermaid-hide-pre {
+  pre {
+    display: none;
+  }
+}
