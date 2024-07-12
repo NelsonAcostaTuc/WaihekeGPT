@@ -6,7 +6,7 @@ export const useCurrentTool = createGlobalState<string | undefined | null>(
   localStorage.getItem(':currentTool') || 'settings',
 );
 export const useCollections = createGlobalState<CollectionItem[]>([]);
-export const useOpenaiAPIKey = createGlobalState<any>(localStorage.getItem(':openaiKey') || process.env.OPENAI_API_KEY);
+export const useOpenaiAPIKey = createGlobalState<any>(localStorage.getItem(':openaiKey') || process.env.NEXT_PUBLIC_OPENAI_API_KEY);
 export const useAddCollectionAction = createGlobalState<() => any | undefined>();
 export const useCurrentCollection = createGlobalState<any>();
 export const useSubCollectionId = createGlobalState<any>();
