@@ -3,7 +3,7 @@ import OpenAI, { toFile } from 'openai';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const openai = new OpenAI({
-    apiKey: (req.headers['token'] || req.body.token || process.env.NEXT_PUBLIC_OPENAI_API_KEY) as string,
+    apiKey: (req.headers['token'] || req.body.token || process.env.NEXT_PUBLIC_OPENAI) as string,
   });
 
   try {
